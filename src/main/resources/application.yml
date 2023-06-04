@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost/gettoo"
+    username : "root"
+    password : "kyk12050713~"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    spring:
+      security:
+        user:
+          name: user
+          password: 1234
+
+    upload:
+    directory: C:/capstoneImage
+
+
+
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+

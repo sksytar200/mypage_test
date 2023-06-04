@@ -1,0 +1,61 @@
+<!-- admin/list.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Client List</title>
+</head>
+<body>
+<h1>Client List</h1>
+<form action="/clientlogout" method="post">
+    <button class="w-100 btn btn-dark btn-lg" type="submit">
+        로그아웃
+    </button>
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>이름</th>
+        <th>학과</th>
+        <th>학번</th>
+        <th>동아리장 여부</th>
+        <th>승인</th>
+        <!-- 필요한 다른 컬럼들을 추가 -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="client : ${clients}">
+        <td th:text="${client.id}"></td>
+        <td th:text="${client.name}"></td>
+        <td th:text="${client.department}"></td>
+        <td th:text="${client.studentNumber}"></td>
+        <td th:text="${client.leader}"></td>
+        <td>
+            <form th:action="@{/admin/auth}" method="post">
+                <input type="hidden" name="clientId" th:value="${client.id}">
+                <button type="submit">승인</button>
+            </form>
+        </td>
+        <td>
+            <form th:action="@{/admin/checkimg}" method="get">
+                <input type="hidden" name="clientId" th:value="${client.id}">
+                <button type="submit" onclick="showImage('${client.imageFileName}')">학생증 확인</button>
+            </form>
+            <div id="imageContainer"></div>
+        </td>
+
+    </tr>
+    <script th:inline="javascript">
+        function showImage(imageFileName) {
+            var imageContainer = document.getElementById("imageContainer");
+            var imageUrl = '/images/' + imageFileName;
+
+            imageContainer.innerHTML = '<img src="' + imageUrl + '" alt="학생증 이미지">';
+        }
+    </script>
+
+    </tbody>
+</table>
+</body>
+</html>

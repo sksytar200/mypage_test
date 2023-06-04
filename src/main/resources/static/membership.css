@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: #f5f6f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.w-btn {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.wrap {
+  margin: auto;
+}
+
+.wrap .logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wrap .logo h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.wrap .contents {
+  padding: 50px;
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#form__wrap {
+  margin: 0 auto;
+  width: 460px;
+  font-size: 14px;
+}
+
+#form__wrap .terms__check__all {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+#form__wrap .terms__check__all label {
+  margin-left: 3px;
+  text-decoration: underline;
+}
+
+.dd {
+  margin: 30px 0;
+  margin-left: 3px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.terms__list .terms__box {
+  margin: 20px 0;
+}
+
+.contents label {
+  font-weight: 700;
+}
+
+.result {
+  font-weight: 700;
+  margin-left: 3px;
+  font-size: 25px;
+}
+
+label.required::after {
+  margin-left: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0086ff;
+  content: "(필수)";
+}
+
+.name
+{
+  margin: 20px;
+  color : black;
+}
+
+.ClassNum
+{
+  margin: 20px;
+}
+
+.id
+{
+  margin: 20px;
+}
+
+.e-mail
+{
+  margin: 20px;
+}
+
+h1
+{
+  margin: 10px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.passwordsearch
+{
+  margin: 20px;
+  text-align: center;
+}
+
+
+.IDbox
+{
+  text-align: center;
+}
+
+#findBtn
+{
+  width:center;
+  padding: 3px;
+  border-radius: 10px;
+  display:inline-block;
+  background-color: black;
+  color: white;
+}
+
+#findBtn1
+{
+  width:center;
+  padding: 3px;
+  border-radius: 10px;
+  display:inline-block;
+  background-color: black;
+  color: white;
+
+}
+.terms__list .terms__content {
+  height: 88px;
+  overflow: auto;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #dadada;
+  background: #fff;
+  font-size: 12px;
+}
+
+.next-button {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  background-color: #242222;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.next-button:hover:enabled {
+  background-color: #a3a2a2;
+}
+
+.next-button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    min-width: 280px;
+    padding: 20px;
+  }
+
+  #form__wrap {
+    max-width: 460px;
+    width: auto;
+  }
+}
+  
