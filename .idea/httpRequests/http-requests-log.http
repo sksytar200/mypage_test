@@ -1,0 +1,18 @@
+GET http://localhost:8080/loginClient
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-05T165042.200.html
+
+###
+
+GET http://localhost:8080/loginClinet/clientInfo
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-05T164939.500.json
+
+###
+

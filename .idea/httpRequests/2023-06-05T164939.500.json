@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-06-05T07:49:39.342+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/loginClinet/clientInfo"
+}
