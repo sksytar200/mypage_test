@@ -15,6 +15,7 @@ public interface ClientRepository {
     Optional<Client> findPwd(String name, String id, String studentNumber, String email);
     List<Client> findAll();
     Optional<Client> findById(String id);
+
     Optional<Client> login(Client client);
     void authJoin(String id);
 

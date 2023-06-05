@@ -23,8 +23,8 @@ public class ClientDto {
 
     private String joinCheck;
 
-    private String question;
-    private String answer;
+    private static String question;
+    private static String answer;
 
     private String question2;
     private String answer2;
@@ -68,9 +68,9 @@ public class ClientDto {
 
     private String Leader;
 
-    public String getQuestion(){ return question;}
+    public static String getQuestion(){ return question;}
     public void setQuestion(String question){this.question=question;}
-    public String getAnswer(){ return answer;}
+    public static String getAnswer(){ return answer;}
 
     public void setAnswer(String answer){this.answer=answer; }
 

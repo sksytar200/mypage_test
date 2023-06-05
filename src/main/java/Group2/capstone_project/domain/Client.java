@@ -136,13 +136,13 @@ public class  Client {
     public String getQuestion2() {return question2;}
     public static String getAnswer2(){return answer2;}
 
-    public static String getCurrentUserAnswer() {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (authentication != null) {
-            return authentication.getName();
-        }
-        return null;
-    }
+//    public static String getCurrentUserAnswer() {
+//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//        if (authentication != null) {
+//            return authentication.getName();
+//        }
+//        return null;
+//    }
 
 
 

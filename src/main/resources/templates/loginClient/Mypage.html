@@ -22,53 +22,12 @@
 </head>
 <h1>나의 정보</h1>
 <body>
-    <form action="/loginClient/changePwd" method="get">
-<!--        action 바꿔야함 -->
+    <form action="/loginClient/clientInfo" method="get">
       <button class="w-100 btn btn-dark btn-lg" type="submit">
-        내 정보 변경
+        내 정보
       </button>
     </form>
-<!--<div class="ClientInfo_list">-->
-<!--  <div class="ClientInfo_list">-->
-<!--    <p>아이디: ${client.id}</p>-->
-<!--    <p>이름: ${client.name}</p>-->
-<!--    <table>-->
-<!--      <thead class="top">-->
-<!--      <tr>-->
-<!--        <th>이름</th>-->
-<!--        <th>id</th>-->
-<!--        <th>생년월일</th>-->
-<!--        <th>학번</th>-->
-<!--        <th>학과</th>-->
 
-
-<!--      </tr>-->
-<!--      </thead>-->
-<!--      <tbody>-->
-<!--      <tr th:each="client : ${clients}">-->
-<!--          <td th:text="${client.name}"></td>-->
-<!--          <td th:text="${client.id}"></td>-->
-<!--          <td th:text="${client.age}"></td>-->
-<!--          <td th:text="${client.studentNumber}"></td>-->
-<!--          <td th:text="${client.department}"></td>-->
-<!--      </tr>-->
-
-<!--      </tbody>-->
-<!--    </table>-->
-<!--    <form action="loginClient/ShowMypage" method="get">-->
-<!--      <button class="w-100 btn btn-dark btn-lg" type="submit">-->
-<!--        나의 정보-->
-<!--      </button>-->
-<!--    </form>-->
-<!--    <div class="caption">-->
-<!--      <a th:href="@{client/findPwd}"> 비밀번호 변경 </a>-->
-
-<!--    </div>-->
-<!--    <form action="/loginClient/changePwd" method="get">-->
-<!--        <button class="w-100 btn btn-dark btn-lg" type="submit">-->
-<!--            비밀번호 변경-->
-<!--        </button>-->
-<!--    </form>-->
     <form action="/loginClient/changePwdPage" method="get">
         <button class="w-100 btn btn-dark btn-lg" type="submit">
             비밀번호 변경

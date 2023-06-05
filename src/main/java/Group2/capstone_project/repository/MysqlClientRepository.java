@@ -82,6 +82,8 @@ public class MysqlClientRepository implements ClientRepository{
             client.setEmail(rs.getString("email"));
             client.setSchool(rs.getString("school"));
             client.setDepartment(rs.getString("department"));
+            client.setAnswer(rs.getString("answer"));
+            client.setQuestion(rs.getString("question"));
             client.setLeader(rs.getString("Leader"));
             client.setJoinCheck(rs.getString("joincheck"));
             client.setAdminCheck(rs.getString("admincheck"));

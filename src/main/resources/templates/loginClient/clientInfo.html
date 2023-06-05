@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>마이페이지</title>
+</head>
+<body>
+<h1>나의 정보</h1>
+<div>
+  <div th:each="client:${client}">
+    <p>이름: <span th:text="${client.name}"></span></p>
+    <p>아이디: <span th:text="${client.id}"></span></p>
+    <p>생년월일: <span th:text="${client.age}"></span></p>
+    <p>학번: <span th:text="${client.studentNumber}"></span></p>
+    <p>학과: <span th:text="${client.department}"></span></p>
+  </div>
+
+</div>
+</body>
+</html>
